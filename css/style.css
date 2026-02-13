@@ -1,0 +1,8 @@
+.logo {
+    height: 75px;
+    width: 75px;
+    border-color: lightgray;
+    border-radius: 50%;
+    background-image: url('../assets/img/Logo-RevoU-5_1.original.png');
+    background-size: cover;
+}
