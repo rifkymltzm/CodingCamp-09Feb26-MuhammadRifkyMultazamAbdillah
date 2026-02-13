@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
     </style>
 </head>
 
-<body class="bg-slate-950 text-slate-200 scroll-smooth">
+<body class="bg-slate-950 text-slate-200">
 
     <!--  NAVBAR  -->
     <header class="fixed w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
@@ -161,7 +161,7 @@
                             A detail-oriented full stack developer focused on building clean,
                             structured, and user-friendly web interfaces. 
                             Experienced in developing responsive layouts using 
-                            HTML, TailwindCSS, and JavaScript with strong attention 
+                            HTML, Tailwind CSS, and JavaScript with strong attention 
                             to spacing consistency and UI clarity.
                         </p>
                     </div>
@@ -181,18 +181,13 @@
                         </div>
 
                         <div>
-                            <p class="text-slate-500">Location</p>
-                            <p class="text-white mt-1">Indonesia</p>
-                        </div>
-
-                        <div>
-                            <p class="text-slate-500">Specialization</p>
-                            <p class="text-white mt-1">Full Stack Developer</p>
-                        </div>
-
-                        <div>
                             <p class="text-slate-500">Experience Level</p>
                             <p class="text-white mt-1">Entry – Junior Level</p>
+                        </div>
+
+                        <div>
+                            <p class="text-slate-500">Region</p>
+                            <p class="text-white mt-1">Indonesia</p>
                         </div>
 
                     </div>
@@ -209,7 +204,7 @@
                             </span>
 
                             <span class="px-4 py-2 text-sm bg-slate-900 border border-slate-800 rounded-lg">
-                                TailwindCSS
+                                Tailwind CSS
                             </span>
 
                             <span class="px-4 py-2 text-sm bg-slate-900 border border-slate-800 rounded-lg">
@@ -232,8 +227,6 @@
     </section>
 
 
-
-
     <!--  MESSAGE SECTION  -->
     <section id="message" class="py-28 border-t border-slate-800">
 
@@ -249,32 +242,32 @@
                 <form id="messageForm" class="space-y-6">
 
                     <div>
-                        <label class="block text-sm mb-2 text-slate-400">Nama</label>
+                        <label class="block text-sm mb-2 text-slate-400">Nama<span class="text-red-700">*</span></label>
                         <input type="text" id="nama"
                             class="w-full bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg 
-                                   focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                   focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                     </div>
 
                     <div>
-                        <label class="block text-sm mb-2 text-slate-400">Tanggal Lahir</label>
+                        <label class="block text-sm mb-2 text-slate-400">Tanggal Lahir<span class="text-red-700">*</span></label>
                         <input type="date" id="tanggal"
                             class="w-full bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg 
-                                   focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                   focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                     </div>
 
                     <div>
                         <label class="block text-sm mb-2 text-slate-400">Jenis Kelamin</label>
                         <div class="flex space-x-8 text-slate-400">
-                            <label><input type="radio" name="gender" value="Laki - Laki"> Laki - Laki</label>
+                            <label><input type="radio" name="gender" value="Laki - Laki" checked> Laki - Laki</label>
                             <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-sm mb-2 text-slate-400">Pesan</label>
+                        <label class="block text-sm mb-2 text-slate-400">Pesan<span class="text-red-700">*</span></label>
                         <textarea id="pesan" rows="4"
                             class="w-full bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg 
-                                   focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                                   focus:ring-2 focus:ring-blue-500 focus:outline-none" required></textarea>
                     </div>
 
                     <button type="submit"
@@ -306,7 +299,7 @@
 
     <!--  FOOTER  -->
     <footer class="py-6 text-center text-xs text-slate-600 border-t border-slate-800">
-        Created by RevoU
+        Created by Rifky Multazam &copy; 2026  
     </footer>
 
 
